@@ -60,7 +60,7 @@ const Weather = () => {
       const data = await response.json();
   
       if(!response.ok){
-        alert(data.message);
+        // alert(data.message);
         return;
       }
   
@@ -97,7 +97,7 @@ const Weather = () => {
   const fetchCoordinatesData = (position) => {
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
-    console.log(lat, long);
+    // console.log(lat, long);
     fetchData(lat, long);
   }
 
